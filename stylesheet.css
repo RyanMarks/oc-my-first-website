@@ -1,0 +1,40 @@
+body {
+    background-image: url("BackgroundCloudy.png");
+    background-size: cover;
+    background-attachment:fixed;
+    line-height: 1.5;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #999;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-color: rgba(255,255,255,.05);
+    border-style:inset;
+    border-width: 3px;
+
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 160px;
+}
+
+a {
+    color:#777;
+    text-decoration: underline
+}
+
+a:hover {
+    text-decoration: underline dotted;
+}

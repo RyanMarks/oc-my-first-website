@@ -5,36 +5,73 @@ body {
     line-height: 1.5;
 }
 
-div {
+.maindivder {
     background-color: rgba(0, 0, 0, 0.5);
     color: #999;
+    max-width: 900px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 200px;
-    margin-right: 200px;
     border-radius: 15px;
     margin-top: 20px;
+    padding-bottom:25px;
     border-color: rgba(255,255,255,.05);
     border-style:inset;
     border-width: 3px;
+    justify-self: center;
+    width:stretch;
+}
+
+.flexbox{
+    display:flex;
+    gap: 5px;
+    justify-self:center;
+    flex-direction:row;
+    flex-wrap: wrap;
 
 }
+.linkbox{
+    background-color: #222222;
+    border-radius:3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width:260px;
+    height:200px;
+    border-style:double;
+    border-color:#000;
+    border-width: 3px;
+}
+.linkbox:hover{
+    background-color: #333;
+    border-style:dotted;
+    border-color:#666;
+    border-width:1px;
+    margin:2px;
+}
+
 footer{
     background-color:rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    color: #333;
     padding: 20px;
     padding-bottom: 0px;
-    margin-left: 200px;
-    margin-right: 200px;
     margin-top: 160px;
+    max-width: 960px;
+    justify-self:center;
+    width:stretch;
 }
 
 a {
-    color:#777;
+    color:#7e6262;
     text-decoration: underline
 }
 
 a:hover {
     text-decoration: underline dotted;
+}
+
+.footerlink{
+    color:#777;
+}
+
+#siteauthor{
+    color: #333;
 }

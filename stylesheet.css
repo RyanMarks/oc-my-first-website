@@ -1,7 +1,7 @@
 body {
     background-image: url("BackgroundCloudy.png");
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     line-height: 1.5;
 }
 
@@ -13,54 +13,58 @@ body {
     padding-right: 40px;
     border-radius: 15px;
     margin-top: 20px;
-    padding-bottom:25px;
-    border-color: rgba(255,255,255,.05);
-    border-style:inset;
+    padding-bottom: 25px;
+    border-color: rgba(255, 255, 255, .05);
+    border-style: inset;
     border-width: 3px;
     justify-self: center;
-    width:stretch;
+    width: stretch;
 }
 
-.flexbox{
-    display:flex;
+.flexbox {
+    display: flex;
     gap: 5px;
-    justify-self:center;
-    flex-direction:row;
+    justify-self: center;
+    flex-direction: row;
     flex-wrap: wrap;
 
 }
-.linkbox{
+
+.flexbox div {
     background-color: #222222;
-    border-radius:3px;
+    border-radius: 3px;
     padding-left: 15px;
     padding-right: 15px;
-    width:260px;
-    height:200px;
-    border-style:double;
-    border-color:#000;
+    width: 260px;
+    height: 200px;
+    border-style: double;
+    border-color: #000;
     border-width: 3px;
 }
-.linkbox:hover{
+
+.flexbox div:hover {
     background-color: #333;
-    border-style:dotted;
-    border-color:#666;
-    border-width:1px;
-    margin:2px;
+    border-style: dotted;
+    border-color: #666;
+    border-width: 2px;
+    padding: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-footer{
-    background-color:rgba(0, 0, 0, 0.2);
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
     padding-bottom: 0px;
     margin-top: 160px;
     max-width: 960px;
-    justify-self:center;
-    width:stretch;
+    justify-self: center;
+    width: stretch;
 }
 
 a {
-    color:#7e6262;
+    color: #7e6262;
     text-decoration: underline
 }
 
@@ -68,10 +72,15 @@ a:hover {
     text-decoration: underline dotted;
 }
 
-.footerlink{
-    color:#777;
+footer a {
+    color: #777;
 }
 
-#siteauthor{
+#siteauthor {
     color: #333;
+}
+
+h1, h2, h3
+{
+    font-family:'Times New Roman', Times, serif
 }

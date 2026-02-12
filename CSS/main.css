@@ -1,14 +1,60 @@
-body {
-    background-image: url("BackgroundCloudy.png");
-    background-size: cover;
-    background-attachment: fixed;
-    line-height: 1.5;
+.backgroundCloudy {
+    background-image: url("../media/BackgroundCloudy.png");
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 1);
+    color: #999;
+    margin:0px;
+    padding-top: 25px;
+    border-color: rgba(255, 255, 255, .25);
+    border-style:ridge;
+    border-width: 3px;
+    border-width:5px;
+    border-top-width:0px;
+    border-bottom-left-radius:150px;
+    border-bottom-right-radius:150px;
+    width: stretch;
+    position:fixed;
+    top:0;
+}
+.navflexbox {
+    display: flex;
+    gap: 1px;
+    justify-self: center;
+    flex-direction: row;
+    padding-left:50px;
+    padding-right:50px;
+    width:stretch;
+}
+.navbox {
+    background-color: #222222;
+    border-radius: 5px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 20px;
+    border-style: double;
+    border-color: #000;
+    border-width: 3px;
+    width:stretch;
+}
+.navbox:hover{
+    background-color: #333;
 }
 
-.maindivder {
+.navbox div {
+    justify-self:center
+}
+.page-content {
+    line-height: 1.5;
+    justify-self: center;
+    margin-top:100px;
+}
+
+.maindivider {
     background-color: rgba(0, 0, 0, 0.5);
     color: #999;
-    max-width: 900px;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 15px;
@@ -17,7 +63,7 @@ body {
     border-color: rgba(255, 255, 255, .05);
     border-style: inset;
     border-width: 3px;
-    justify-self: center;
+    max-width: 900px;
     width: stretch;
 }
 
@@ -83,4 +129,8 @@ footer a {
 h1, h2, h3
 {
     font-family:'Times New Roman', Times, serif
+}
+
+body{
+    margin:0px;
 }

@@ -1,6 +1,37 @@
 .backgroundCloudy {
     background-image: url("../media/BackgroundCloudy.png");
 }
+.backgroundTurbulance{
+    background-image: url("../media/ForegroundCloudy.png");
+}
+.backgroundForegroundCloudy{
+    background-image: url("../media/ForegroundCloudy.png");
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    color: white;
+    cursor:pointer;
+}
+
+@media (max-width: 750px){
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        display:none;
+        height:0px;
+    }
+    .maindivider {
+        margin-top:0px;
+    }
+    .navbar.active{
+        display: block;
+    }
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 1);
     color: #999;
@@ -20,11 +51,10 @@
 .navflexbox {
     display: flex;
     gap: 1px;
-    justify-self: center;
     flex-direction: row;
     padding-left:50px;
     padding-right:50px;
-    width:stretch;
+    justify-content:space-between;
 }
 .navbox {
     background-color: #222222;
@@ -76,7 +106,7 @@
 
 }
 
-.flexbox div {
+.linkbox {
     background-color: #222222;
     border-radius: 3px;
     padding-left: 15px;

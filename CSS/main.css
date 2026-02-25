@@ -1,85 +1,111 @@
 .backgroundCloudy {
-    background-image: url("../media/BackgroundCloudy.png");
-}
-.backgroundTurbulance{
-    background-image: url("../media/ForegroundCloudy.png");
-}
-.backgroundForegroundCloudy{
-    background-image: url("../media/ForegroundCloudy.png");
+    background: url('../media/ForegroundCloudy.png'),
+                url('../media/BackgroundTurbulance.png'),
+                url('../media/BackgroundCloudy.png');
+    margin: 0px;
 }
 
 .hamburger {
     display: none;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     background: none;
+    margin-top:5px;
+    margin-left:5px;
     color: white;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
     .hamburger {
         display: block;
+        position:fixed;
+        z-index: 2555;
+        top:0;
     }
+
     .navbar {
-        display:none;
-        height:0px;
+        display: none;
+        height: 0px;
     }
+
     .maindivider {
-        margin-top:0px;
+        margin-top: 0px;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
+        width: fit-content;
+        height: fit-content;
+        justify-self: left;
+        padding-top: 0px;
+        padding-left:0px;
+        border-left-width: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+
+    }
+    .navbar.active .navflexbox {
+        flex-direction: column;
+        padding-left:40px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        
     }
 }
 
 .navbar {
     background-color: rgba(0, 0, 0, 1);
     color: #999;
-    margin:0px;
-    padding-top: 25px;
+    margin: 0px;
+    padding-top: 10px;
     border-color: rgba(255, 255, 255, .25);
-    border-style:ridge;
-    border-width: 3px;
-    border-width:5px;
-    border-top-width:0px;
-    border-bottom-left-radius:150px;
-    border-bottom-right-radius:150px;
+    border-style: ridge;
+    border-width: 5px;
+    border-top-width: 0px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
     width: stretch;
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
 }
+
 .navflexbox {
     display: flex;
     gap: 1px;
     flex-direction: row;
-    padding-left:50px;
-    padding-right:50px;
-    justify-content:space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
 }
+
 .navbox {
     background-color: #222222;
     border-radius: 5px;
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius:0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding-left: 15px;
     padding-right: 15px;
     height: 20px;
     border-style: double;
     border-color: #000;
     border-width: 3px;
-    width:stretch;
+    width: stretch;
 }
-.navbox:hover{
+
+.navbox:hover {
     background-color: #333;
 }
 
 .navbox div {
-    justify-self:center
+    justify-self: center
 }
+
 .page-content {
     line-height: 1.5;
     justify-self: center;
-    margin-top:100px;
+    margin-top: 100px;
+    opacity: 1;
 }
 
 .maindivider {
@@ -118,14 +144,11 @@
     border-width: 3px;
 }
 
-.flexbox div:hover {
+.linkbox:hover {
     background-color: #333;
-    border-style: dotted;
-    border-color: #666;
-    border-width: 2px;
-    padding: 1px;
-    padding-left: 16px;
-    padding-right: 16px;
+    border-style:groove;
+    border-color: #555;
+    border-width: 3px;
 }
 
 footer {
@@ -156,11 +179,8 @@ footer a {
     color: #333;
 }
 
-h1, h2, h3
-{
-    font-family:'Times New Roman', Times, serif
-}
-
-body{
-    margin:0px;
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif
 }

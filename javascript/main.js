@@ -15,6 +15,9 @@ fetch("components/nav.html")
 fetch("components/linkbox.html")
 .then(response => response.text())
 .then(data => {
-    document.querySelectorAll(".link-box-placeholder").innerHTML = data;
+    const lis = document.querySelectorAll(".link-box-placeholder")
+    lis.forEach((node) =>{
+        node.innerHTML = data;
+    })
 })
 .catch(error => console.error("failed to load linkbox", error));

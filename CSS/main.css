@@ -101,11 +101,12 @@
     justify-self: center
 }
 
-.page-content {
+main {
     line-height: 1.5;
-    justify-self: center;
     margin-top: 100px;
-    opacity: 1;
+    justify-self:center;
+    max-width: 986px;
+    width: stretch;
 }
 
 .maindivider {
@@ -131,7 +132,6 @@
     flex-wrap: wrap;
 
 }
-
 .linkbox {
     background-color: #222222;
     border-radius: 3px;
@@ -160,6 +160,7 @@ footer {
     max-width: 960px;
     justify-self: center;
     width: stretch;
+    bottom:0;
 }
 
 a {

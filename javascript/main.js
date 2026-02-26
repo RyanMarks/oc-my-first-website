@@ -21,3 +21,10 @@ fetch("components/linkbox.html")
     })
 })
 .catch(error => console.error("failed to load linkbox", error));
+
+fetch("components/footer.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer-placeholder").innerHTML = data
+})
+.catch(error => console.error("failed to load footer", error));

@@ -1,23 +1,25 @@
 #left {
-    width: 250px;
+    width: 215px;
     height: 450px;
     float:left;
 }
 #center {
-    width: 250px;
+    width: 210px;
     height: 450px;
     float:left;
 }
 #right {
-    width: 250px;
+    width: 210px;
     height: 450px;
     float:right;
-}
-.maindivider{
-    margin-left:25px;
-    margin-right:25px;
 }
 .container{
     justify-self:center;
     justify-content:center;
+    height:fit-content;
+    width:stretch;
 }
+.maindivider{
+    height:fit-content;
+}
+

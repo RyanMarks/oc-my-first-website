@@ -1,0 +1,10 @@
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+}
+
+.box{
+    width:stretch;
+    min-height:350px;
+}

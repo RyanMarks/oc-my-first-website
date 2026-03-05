@@ -1,7 +1,7 @@
 .backgroundCloudy {
     background: url('../media/ForegroundCloudy.png'),
-                url('../media/BackgroundTurbulance.png'),
-                url('../media/BackgroundCloudy.png');
+        url('../media/BackgroundTurbulance.png'),
+        url('../media/BackgroundCloudy.png');
     margin: 0px;
 }
 
@@ -9,49 +9,10 @@
     display: none;
     font-size: 1.2rem;
     background: none;
-    margin-top:5px;
-    margin-left:5px;
+    margin-top: 5px;
+    margin-left: 5px;
     color: white;
     cursor: pointer;
-}
-
-@media (max-width: 750px) {
-    .hamburger {
-        display: block;
-        position:fixed;
-        z-index: 2555;
-        top:0;
-    }
-
-    .navbar {
-        display: none;
-        height: 0px;
-    }
-
-    .maindivider {
-        margin-top: 0px;
-    }
-
-    .navbar.active {
-        display: block;
-        width: fit-content;
-        height: fit-content;
-        justify-self: left;
-        padding-top: 0px;
-        padding-left:0px;
-        border-left-width: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 15px;
-
-    }
-    .navbar.active .navflexbox {
-        flex-direction: column;
-        padding-left:40px;
-        padding-top: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        
-    }
 }
 
 .navbar {
@@ -104,18 +65,18 @@
 main {
     line-height: 1.5;
     margin-top: 100px;
-    justify-self:center;
+    justify-self: center;
     max-width: 986px;
     width: stretch;
 }
 
 .maindivider {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #999;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-bottom: 200px;
     padding-bottom: 25px;
     border-color: rgba(255, 255, 255, .05);
     border-style: inset;
@@ -124,14 +85,20 @@ main {
     width: stretch;
 }
 
+p {
+    color: #999;
+}
+
 .flexbox {
     display: flex;
     gap: 5px;
     justify-self: center;
+    justify-content: left;
     flex-direction: row;
     flex-wrap: wrap;
 
 }
+
 .linkbox {
     background-color: #222222;
     border-radius: 3px;
@@ -146,7 +113,7 @@ main {
 
 .linkbox:hover {
     background-color: #333;
-    border-style:groove;
+    border-style: groove;
     border-color: #555;
     border-width: 3px;
 }
@@ -160,7 +127,6 @@ footer {
     max-width: 960px;
     justify-self: center;
     width: stretch;
-    bottom:0;
 }
 
 a {
@@ -184,4 +150,55 @@ h1,
 h2,
 h3 {
     font-family: 'Times New Roman', Times, serif
+}
+
+@media (max-width:996px) {
+    .flexbox {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 2555;
+        top: 0;
+    }
+
+    .navbar {
+        display: none;
+        height: 0px;
+    }
+
+    .maindivider {
+        margin-top: 30px;
+    }
+
+    .navbar.active {
+        display: block;
+        width: stretch;
+        height: fit-content;
+        justify-self: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        border-left-width: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+
+    }
+
+    .navbar.active .navflexbox {
+        flex-direction: column;
+        padding-left: 40px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+
+    }
+
+    .navbox {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }

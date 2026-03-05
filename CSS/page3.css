@@ -8,3 +8,15 @@
     width:stretch;
     min-height:350px;
 }
+
+@media (max-width: 1200px) {
+    .gridcontainer {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .gridcontainer {
+        grid-template-columns: auto auto;
+    }
+}

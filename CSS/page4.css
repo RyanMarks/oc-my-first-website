@@ -1,0 +1,40 @@
+.warningdivider{
+    background-color: rgba(20, 0, 0, 0.4);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 200px;
+    border-color: rgba(255, 255, 255, .05);
+    border-style: inset;
+    border-width: 3px;
+    border-bottom-width:0px;
+    padding-bottom:3px;
+    max-width: 900px;
+    width: stretch;
+}
+
+#belowwarning{
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+}
+
+.warning {
+    color:lightcoral;
+    font-size:30px;
+    font-style:italic;
+    justify-self:center;
+}
+
+@media (max-width: 1200px) {
+    .gridcontainer {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .gridcontainer {
+        grid-template-columns: auto auto;
+    }
+}

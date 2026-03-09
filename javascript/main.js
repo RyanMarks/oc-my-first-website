@@ -1,4 +1,4 @@
-fetch("components/nav.html")
+fetch("./components/nav.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("nav-bar-placeholder").innerHTML = data;
@@ -12,7 +12,7 @@ fetch("components/nav.html")
     })
     .catch(error => console.error("failed to load nav", error));
 
-fetch("components/linkbox.html")
+fetch("./components/linkbox.html")
 .then(response => response.text())
 .then(data => {
     const lis = document.querySelectorAll(".link-box-placeholder")
@@ -22,7 +22,7 @@ fetch("components/linkbox.html")
 })
 .catch(error => console.error("failed to load linkbox", error));
 
-fetch("components/footer.html")
+fetch("./components/footer.html")
     .then(response => response.text())
     .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data

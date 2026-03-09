@@ -13,6 +13,8 @@
     padding-bottom:3px;
     max-width: 900px;
     width: stretch;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 #belowwarning{
@@ -22,7 +24,11 @@
 
 .warning {
     color:lightcoral;
+    margin:5px;
     font-size:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    line-height:1;
     font-style:italic;
     justify-self:center;
 }

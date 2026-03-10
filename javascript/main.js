@@ -1,7 +1,7 @@
 fetch("./components/nav.html")
     .then(response => response.text())
     .then(data => {
-        document.getElementById("nav-bar-placeholder").innerHTML = data;
+        document.getElementById("nav-bar-placeholder").outerHTML = data;
 
         const hamburger = document.getElementById("hamburger");
         const navList = document.getElementById("navbar");

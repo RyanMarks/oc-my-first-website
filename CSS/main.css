@@ -5,6 +5,12 @@
     margin: 0px;
 }
 
+#nav-bar-placeholder {
+    width: stretch;
+    position: sticky;
+    top: 0;
+}
+
 .hamburger {
     display: none;
     font-size: 1.2rem;
@@ -26,8 +32,8 @@
     border-top-width: 0px;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
-    width: stretch;
-    position: fixed;
+    width: 100%;
+    position: sticky;
     top: 0;
 }
 
@@ -45,21 +51,16 @@
     border-radius: 5px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
     height: 20px;
     border-style: double;
     border-color: #000;
     border-width: 3px;
-    width: stretch;
+    width: 25%;
+    text-align:center;
 }
 
 .navbox:hover {
     background-color: #333;
-}
-
-.navbox div {
-    justify-self: center
 }
 
 main {

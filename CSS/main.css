@@ -22,32 +22,38 @@
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 1);
-    color: #999;
+    background: linear-gradient(to bottom, #000, #0f0A0A);
     margin: 0px;
-    padding-top: 10px;
     border-color: rgba(255, 255, 255, .25);
     border-style: ridge;
     border-width: 5px;
     border-top-width: 0px;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     width: 100%;
     position: sticky;
     top: 0;
 }
 
-.navflexbox {
+.navtopbox {
     display: flex;
-    gap: 1px;
     flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;
     justify-content: space-between;
 }
 
+.navflexbox {
+    display: flex;
+    gap: 1px;
+    flex-direction: row;
+    width: 100%;
+    align-self: right;
+    align-content: space-around;
+}
+
 .navbox {
-    background-color: #222222;
+    background:linear-gradient(to bottom, #222222, #272222);
     border-radius: 5px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -55,20 +61,35 @@
     border-style: double;
     border-color: #000;
     border-width: 3px;
-    width: 25%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
 }
 
 .navbox:hover {
-    background-color: #333;
+    background:linear-gradient(to bottom, #333, #383333);
 }
 
-main {
-    line-height: 1.5;
-    margin-top: 100px;
-    justify-self: center;
-    max-width: 986px;
-    width: stretch;
+.navtitle {
+    color: #99999900;
+    background: conic-gradient(to right, #444, #211);
+    background-clip: text;
+    font-family: 'Times New Roman', Times, serif;
+    width: 350px;
+    text-align: left;
+    font-size: 35px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    align-self: left;
+}
+
+
+
+main{
+    margin-top:100px;
 }
 
 .maindivider {
@@ -77,17 +98,19 @@ main {
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 15px;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     padding-bottom: 25px;
     border-color: rgba(255, 255, 255, .05);
     border-style: inset;
     border-width: 3px;
     max-width: 900px;
     width: stretch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
-    color: #999;
+    color: #AAA;
 }
 
 .flexbox {
@@ -126,12 +149,13 @@ footer {
     padding-bottom: 0px;
     margin-top: 160px;
     max-width: 960px;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     width: stretch;
 }
 
 a {
-    color: #7e6262;
+    color: #8c6d6d;
     text-decoration: underline
 }
 
@@ -150,7 +174,10 @@ footer a {
 h1,
 h2,
 h3 {
-    font-family: 'Times New Roman', Times, serif
+    color: #99999900;
+    background: linear-gradient(to bottom, #666, #433);
+    background-clip: text;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media (max-width:996px) {
@@ -185,15 +212,15 @@ h3 {
         padding-left: 0px;
         border-left-width: 0px;
         border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 15px;
+        border-bottom-right-radius: 0px;
 
     }
 
     .navbar.active .navflexbox {
         flex-direction: column;
-        padding-left: 40px;
+        padding-left: 0px;
         padding-top: 5px;
-        padding-right: 5px;
+        padding-right: 0px;
         padding-bottom: 5px;
 
     }
@@ -202,4 +229,8 @@ h3 {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+
+    .navtopbox {
+    flex-direction: column;
+}
 }
